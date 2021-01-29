@@ -1,18 +1,30 @@
-<html lang="en">
-    <!--Version 7.0 
-	Name:
-	Date Completed:
-    -->
-    <head>
-        
-        <title>Web Development User #32</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #32</center>
-    
-    </body>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+        var person = {
+            fullName: function(city, country) {
+                return this.firstName + " " + this.lastName + "," + city + "," + country;
+            }
+        }
+        var person1 = {
+            firstName: "John",
+            lastName: "Doe"
+        }
+        person.fullName.call(person1, "Oslo", "Norway");
+    </script>
+</head>
+
+<body>
+
+    <h1>A Web Page</h1>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+</body>
 
 </html>
